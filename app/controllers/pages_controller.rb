@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
   def home
-    @user = User.new
+    @restaurant = Restaurant.new
   end
 end
