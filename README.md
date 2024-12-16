@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Sandbox repo : 
 
-Things you may want to cover:
+``Tailwind``
+``Simple form``
+``Daisyui``
+``Devise``
+``postgresql``
 
-* Ruby version
 
-* System dependencies
+## Command 
 
-* Configuration
+Uniquement un `bundle` et un `npm install` devrait suffire
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
