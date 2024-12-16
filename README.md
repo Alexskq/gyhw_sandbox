@@ -54,7 +54,7 @@ gem install foreman
 
 ### 3. Préparer la base de données
 
-Assurez-vous que la base de données est correctement configurée et préparez-la avec la commande suivante :
+Préparez-la avec la commande suivante :
 
 ```bash
 rails db:prepare
@@ -65,7 +65,7 @@ rails db:prepare
 Enfin, lancez le serveur avec la commande suivante :
 
 ```bash
-foreman start
+dev
 ```
 
-Cela démarrera le serveur et vous pourrez accéder à l'application localement.
+Enjoy ! 
