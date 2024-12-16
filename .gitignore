@@ -16,9 +16,9 @@
 !/log/.keep
 !/tmp/.keep
 
- # Ignore Mac and Linux file system files
-    *.swp
-    .DS_Store
+# Ignore Mac and Linux file system files
+*.swp
+.DS_Store
 
 # Ignore pidfiles, but keep the directory.
 /tmp/pids/*
