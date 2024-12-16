@@ -3,8 +3,7 @@
 # Use this setup block to configure all options available in SimpleForm.
 SimpleForm.setup do |config|
   # Default class for buttons
-  config.button_class =
-    'my-2 bg-blue-500 hover:bg-blue-700 text-white font-bold text-sm py-2 px-4 rounded'
+  config.button_class ="btn btn-primary"
 
   # Define the default class of the input wrapper of the boolean input.
   config.boolean_label_class = ''
@@ -69,11 +68,11 @@ SimpleForm.setup do |config|
   # vertical input for boolean (aka checkboxes)
   config.wrappers :vertical_boolean,
                   tag: 'div',
-                  class: 'mb-4 flex items-center gap-3',
+                  class: 'mb-4 flex',
                   error_class: '' do |b|
     b.use :html5
     b.optional :readonly
-    b.wrapper tag: 'div', class: 'flex items-center h-5' do |ba|
+    b.wrapper tag: 'div', class: 'flex items-center h-5 ' do |ba|
       ba.use :input,
              class:
                'focus:ring-2 focus:ring-indigo-500:focus ring-offset-2 h-4 w-4 text-indigo-600 border-gray-300 rounded'
