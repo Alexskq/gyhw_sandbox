@@ -1,0 +1,66 @@
+<div class="hero bg-base-200 min-h-screen">
+  <div class="hero-content flex-col lg:flex-row-reverse">
+    <div class="text-center lg:text-left">
+      <h1 class="text-5xl font-bold">Login now!</h1>
+      <p class="py-6">
+        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+        excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a
+        id nisi.
+      </p>
+    </div>
+    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+      <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: 'card-body' }) do |f| %>
+        <div class="form-control">
+          <%=
+            f.input :email,
+                    required: false,
+                    label: 'Email ',
+                    label_html: {
+                      class: 'label-text',
+                    },
+                    input_html: {
+                      autocomplete: 'email',
+                      class:
+                        'input input-bordered focus:outline-none focus:ring-2 focus:ring-blue-500',
+                    }
+          %>
+        </div>
+        <div class="form-control">
+          <%=
+            f.input :password,
+                    required: false,
+                    label: 'Password',
+                    label_html: {
+                      class: 'label-text ',
+                    },
+                    input_html: {
+                      autocomplete: 'current-password',
+                      class: 'input input-bordered',
+                    }
+          %>
+        </div>
+        <%# <div class="form-control mt-4"> %>
+        <%=
+          if devise_mapping.rememberable?
+            f.input :remember_me,
+                    as: :boolean,
+                    wrapper_html: {
+                      class: '',
+                    },
+                    label_html: {
+                      class: 'label-text-alt link link-hover ',
+                    }
+          end
+        %>
+        <%# </div> %>
+
+        <div class="form-control mt-6">
+          <%= f.button :submit, 'Log in', class: 'btn btn-primary' %>
+        </div>
+        <div class="label">
+          <%= render 'devise/shared/links' %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
