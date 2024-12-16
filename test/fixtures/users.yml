@@ -6,8 +6,8 @@
 #
 user_one:
   email: user_one@example.com
-  password_digest: first_password_digest
+  password: first_password_digest
 
 user_two:
   email: user_two@example.com
-  password_digest: second_password_digest
+  password: second_password_digest
