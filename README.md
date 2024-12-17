@@ -46,11 +46,6 @@ Ensuite, installez les dépendances npm :
 npm install
 ```
 
-Si `foreman` n'est pas installé globalement, vous pouvez l'installer avec la commande suivante :
-
-```bash
-gem install foreman
-```
 
 ### 3. Préparer la base de données
 
