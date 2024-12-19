@@ -1,9 +1,13 @@
-<div class="flex w-full">
-  <div class="flex-none">
-    <%= render "pages/shared/sidebar" %>
+<div class="flex min-w-full min-h-screen">
+  <div class="hidden lg:block flex-col">
+    <%= render 'pages/shared/sidebar' %>
   </div>
+
+
   <div class="flex-grow">
-    <%= render "pages/shared/navbar" %>
+    <%= render 'pages/shared/navbar' %>
+
+    <%= render "pages/shared/card" %>
+
   </div>
 </div>
-
