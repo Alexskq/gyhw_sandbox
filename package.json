@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "daisyui": "^4.12.22"
+  },
+  "dependencies": {
+    "flowbite": "^2.5.2"
   }
 }

@@ -18,13 +18,15 @@
     <link rel="apple-touch-icon" href="/icon.png">
 
     <%# Includes all stylesheet files in app/assets/stylesheets %>
-    <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
-    <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag 'tailwind', 'inter-font', 'data-turbo-track': 'reload' %>
+    <%= stylesheet_link_tag :app, 'data-turbo-track': 'reload' %>
     <%= javascript_importmap_tags %>
+    <%# charts (uniquement pour la demo) %>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
   </head>
 
   <body>
-    <main class="container mx-auto lg:mt-28 lg:px-5 flex">
+    <main class=" mx-auto lg:mx-0 lg:px-0 mt-4 lg:mt-0  flex flex-col lg:flex-row">
       <%= yield %>
     </main>
   </body>
