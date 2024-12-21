@@ -1,0 +1,6 @@
+[
+  {
+    "key": "ctrl+shift+i",
+    "command": "erb.erb-lint.correct"
+  }
+]
