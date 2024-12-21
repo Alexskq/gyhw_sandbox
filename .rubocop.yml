@@ -26,3 +26,10 @@ AllCops:
 require:
   - rubocop-erb
   - rubocop-rails
+
+Style/Documentation: #
+  Enabled: false # Active la règle
+  # Severity: error  # Génère une erreur si la documentation est absente
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
