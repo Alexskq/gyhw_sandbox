@@ -58,7 +58,8 @@ end
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
-  gem 'erb_lint', require: false
+  gem 'erb_lint', require: false # ERB linting
+  gem 'htmlbeautifier', require: false # HTML formatting with ERB Formatter/Beatify extension
   gem 'rails_live_reload'
   gem 'rubocop-erb', require: false
   gem 'rubocop-rails', require: false

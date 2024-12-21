@@ -4,6 +4,9 @@ linters:
   ErbSafety:
     enabled: true
     # better_html_config: .better-html.yml
+  ExtraNewline:
+    enabled: false
+
   Rubocop:
     enabled: true
     exclude:
@@ -19,6 +22,8 @@ linters:
     rubocop_config:
       inherit_from:
         - .rubocop.yml
+
+
       # ExtraNewline:
       #   Enabled: false
 # ---

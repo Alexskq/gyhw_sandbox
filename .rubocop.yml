@@ -32,3 +32,4 @@ Style/Documentation: #
   # Severity: error  # Génère une erreur si la documentation est absente
 Style/FrozenStringLiteralComment:
   Enabled: false
+
